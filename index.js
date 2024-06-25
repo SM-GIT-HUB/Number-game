@@ -20,7 +20,7 @@ let random = null;
 nameSubmit.onclick = () => {
     if (userName.value.length > 0)
     {
-        welcomeText.textContent += `, ${userName.value}`;
+        welcomeText.textContent += `, ${userName.value}!`;
         nameInput.style.display = "none";
     }
 }
