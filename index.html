@@ -8,7 +8,7 @@
 </head>
 <body class="bg-gray-800 flex gap-[10px] items-center justify-center h-[70vh] flex-col font-mono">
     <h1 class="text-[30px] text-green-400">Guess The Number!</h1>
-    <div class="border-[1px] border-yellow-800 h-[240px] w-[400px] bg-white p-[10px] flex items-center flex-col rounded-[7px]">
+    <div class="border-[1px] border-yellow-800 min-h-[240px] w-[400px] bg-white p-[10px] flex items-center flex-col rounded-[7px]">
         <h1 id="welcomeText" class="text-center text-[20px] pb-[8px]">Welcome</h1>
         <div id="nameInput" class="border-[1px] h-[220px] w-[full] flex flex-col absolute w-[380px] justify-center items-center gap-[10px] bg-yellow-200 rounded-[7px]">
             <div>
@@ -18,17 +18,19 @@
             <button id="nameSubmit" class="bg-green-500 px-5 py-1 rounded-[7px] text-white hover:bg-green-600">Submit</button>
         </div>
         
-        <div class="flex gap-[5px] justify-center flex-wrap">
-            <input id="mini" class="text-center border-[1px] border-black rounded-[5px]" type="text" placeholder="Enter min value">
-            <input id="maxi" class="text-center border-[1px] border-black rounded-[5px]" type="text" placeholder="Enter max value">
-            <button id="minMaxSubmit" class="border-2 border-white bg-blue-500 px-[5px] text-white rounded-[7px] hover:bg-blue-600">Submit</button>
+        <div class="flex justify-around w-full">
+            <input id="mini" class="w-[140px] text-center border-[1px] border-black rounded-[5px]" type="text" placeholder="Enter min value">
+            <input id="maxi" class="w-[140px] text-center border-[1px] border-black rounded-[5px]" type="text" placeholder="Enter max value">
         </div>
-
-        <input id="guessInput" type="text" placeholder="Enter your Guess" class="text-center border-[1px] mt-[5px] border-black rounded-[7px]">
-        <button id="check" class="border-white bg-red-300 m-1 px-3 py-[2px] rounded-[7px] hover:bg-red-400">Check</button>
-        <p id="output" class="text-indigo-800 text-[18px]"></p>
-        <button id="restart" class="border-white bg-red-300 m-2 px-3 py-[2px] rounded-[7px] hover:bg-red-400">Restart</button>
+        <button id="minMaxSubmit" class="border-2 border-white bg-blue-500 px-[5px] text-white rounded-[7px] hover:bg-blue-600 mt-[20px]">Submit</button>
+        
+        <input id="guessInput" type="text" placeholder="Enter your Guess" class="text-center border-[1px] mt-[10px] border-black rounded-[7px]">
+        
+        <p id="output" class="text-indigo-800 text-[18px] text-center"></p>
+        
     </div>
+    <button id="check" class="border-white bg-red-300 m-1 px-3 py-[2px] rounded-[7px] hover:bg-red-400">Check</button>
+    <button id="restart" class="border-white bg-red-300 m-2 px-3 py-[2px] rounded-[7px] hover:bg-red-400">Restart</button>
 
     <script src="index.js"></script>
 </body>

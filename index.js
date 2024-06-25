@@ -37,6 +37,8 @@ minMaxSubmit.onclick = () => {
     {
         random = Math.floor(Math.random() * (maxVal - minVal) + minVal);
         minMaxSubmit.style.display = "none";
+        guessInput.style.marginTop = "40px";
+        output.textContent = "Enter your guess and click check!"
     }
 }
 
@@ -56,7 +58,7 @@ check.onclick = () => {
     if (curval == random || attempt == 10) {
         (() => {
             if (curval == random) {
-                output.textContent = `Congratulations! You guessed the correct number ${random}! ${attempt} attempts. Restart to play again.`
+                output.textContent = `Congratulations! You guessed the correct number ${random}! ${attempt + 1} attempts. Restart to play again.`
             }
             else
                 output.textContent = `The correct number is ${random}. Restart to play again.`
